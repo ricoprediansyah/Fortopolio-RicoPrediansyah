@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #2f192e;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  padding: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.title {
+  color: #ffffff;
+  margin: -10px 0;
+}
+
+.title2 {
+  color: #c4c4c4;
+  font-size: 20px;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Reduced the gap between cards */
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-top: 60px; /* Added padding to adjust for the fixed title */
+}
+
+.card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  color: #2f192e;
+  padding: 10px; /* Reduced the padding inside the card content */
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Increased the margin at the bottom of the heading */
+}
+
+.card-content p {
+  margin: 0;
+}
+
+.card-link {
+  display: block;
+  text-align: center;
+  background-color: #4DAFFE;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

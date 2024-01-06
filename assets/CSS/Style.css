@@ -1,0 +1,310 @@
+/* make string color icon */
+:root{
+    --purple: #2f192e;
+    --purple-light: #30192d;
+    --dark-blue: #012677;
+    --blue:#5c65c0;
+    --sky-blue: #00b4fc;
+    --light-blue: #005bc5;
+    --dark-pink: #f64c57;
+    --dark-magenta: #e21b5a;
+    --light-green: #61e2c2;
+    --light-purple: #d741a5;
+}
+/* all decoration  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Poppins;
+}
+/* photo */
+.profile-card .profile-pic img{
+    margin-top: 10px;
+    width: 200px;
+}
+/* color body */
+body{
+    background: linear-gradient(45deg, var(--purple),var(--purple-light));
+}
+/* position all box */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* big box profile */
+.profile-card{
+    background: #111;
+    width: 400px;
+    padding: 3rem; 
+    border-radius: 15px;
+    position: relative;
+    color: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* profile back */
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+/* title I'm a */
+.profile-details .intro h2{
+    margin-top: 20;
+    font-size: 20px;
+}
+/* box Spins text skill */
+.wrapper{
+    box-sizing: content-box;
+    background-color: #1d1d1d;
+    height: 23px;
+    font-size: 15px;  
+    padding: 10px 10px;
+    margin-top: 10px;
+    display: flex;
+    color: #f9fbfc;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px rgba(0,0,0,,0.2);
+}
+/* hidden text */
+.wrapper .words {
+    overflow: hidden;
+}
+/* Animation Spins text skill */
+.wrapper .words span{
+    display: block;
+    height: 100%;
+    padding-left: 4px;
+    color: #00afd6;
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
+/* Box Sosmed */
+.profile-details .intro .social {
+    margin-top: 10px;
+    margin-bottom: 25px;
+} 
+/* /* Icon Sosmed */
+.profile-details .intro .social i{
+    background-color: #1d1d1d;
+    font-size: 16px;
+    color: #fff;
+    margin: 5px;
+    height: 36px;
+    width: 36px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+/* Animation icon Sosmed */
+.profile-details .intro .social i:hover {
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* main box: Phone, email and Location */
+.profile-details .contact-info{
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 10px;
+    width: 105%;
+}
+/* Border Line */
+.profile-details .contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+/* box icon: Phone, email and Location*/
+.contact-info .row .icon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    padding-top: 10;
+    background-color: #111;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+}
+
+/*Animation icon: Phone, email and Location*/
+.row .icon:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* row distance: Phone, wmail and Location*/
+.row .content {
+    min-width: 79%;
+}
+/* text adjustment: Phone, wmail and Location*/
+.row .content span{
+    font-size: 12px;
+
+}
+/* Button Download */
+
+.download-btn {
+  background: linear-gradient(45deg, #43b9da, #059ef7);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+
+.download-btn:hover {
+  transform: scale(1.1);
+}
+
+/* link Download */
+.download-btn a{
+    color: #fff;
+    margin-top: 10rem;
+}
+/*Animation Download*/
+
+
+/*  */
+/* main box: about me */
+.about{
+    background-color: #111;
+    max-width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 10px;   
+}
+/*Title ABOUT ME */
+.about h1{
+    color: #f2f2f2;
+    padding-left: 1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+}
+/* Shape Line Gradien */
+.about h1::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -50%;
+    width: 45%;
+    height: 3px;
+    background: linear-gradient(45deg #f64c57, #e21b5a);
+}
+/* Paraghraf kontent ABOUT ME */
+.about p{
+    color: #555;
+    margin: 1.5rem 0; 
+    margin-left: 1rem;
+}
+/* title ceck the fortfolio! */
+.about h2{
+    padding-bottom: 0.7rem;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+/* box skill */
+.skills a .skill-box{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+}
+/* tata letak box skill */
+.about .skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+/* icon skill */
+.skills .icon img{
+    width:2.5rem ;
+}
+/* distance  */
+.skills a .skill-box .desc {
+    width: 80%;
+}
+/* title skill */
+.skills a .skill-box .desc h3{
+    color: #f2f2f2;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+/* paraghraf skill  */
+.skills a .skill-box .desc p{
+    margin: 0px;
+    font-size: 14px;
+}
+/* Responsive design */
+@media(max-width:768px)
+{
+    .about{
+        width: 1005;
+        max-width: 400px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .about h1{
+        font-size: 2.2rem;
+    }
+    .about .skills {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4.auto);
+    }
+}
+
