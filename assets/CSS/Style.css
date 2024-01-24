@@ -248,6 +248,10 @@ body{
     margin: 1.5rem 0; 
     margin-left: 1rem;
 }
+
+.about p:hover{
+  color: rgb(166, 166, 166);
+}
 /* title ceck the fortfolio! */
 .about h2{
     padding-bottom: 0.7rem;
@@ -276,7 +280,7 @@ body{
 }
 
 .skills p:hover{
-  color: white;
+  color: rgb(166, 166, 166);
 }
 
 /* tata letak box skill */
