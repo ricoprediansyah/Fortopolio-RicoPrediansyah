@@ -264,7 +264,21 @@ body{
     border: 1px solid #333;
     padding: 1rem;
     margin: 1rem;
+    transition: .5s;
 }
+
+.skills a .skill-box:hover{
+  border: 1px solid white;
+}
+
+.skills p{
+  transition: .5s;
+}
+
+.skills p:hover{
+  color: white;
+}
+
 /* tata letak box skill */
 .about .skills{
     display: grid;
